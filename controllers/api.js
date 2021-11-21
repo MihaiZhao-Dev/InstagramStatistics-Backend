@@ -2,6 +2,7 @@
 const ScrapeService = require('../services/scrapper.service');
 
 exports.post_data = async(req, res) => {
-    const data = await ScrapeService.parseData('https://instagram.com/utopiantravel');
+    const { url } = req.body
+    const data = await ScrapeService.parseData(url);
     return res.json(data);
 }
