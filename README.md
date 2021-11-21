@@ -4,4 +4,5 @@
 1. Use npm install
 2. Start the app using 
     "start"
+    or
     "start:dev"
